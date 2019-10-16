@@ -8,7 +8,9 @@ Data set contains all the transactions occurring between 01/12/2010 and 09/12/20
 Build a product recommendation algorithm 
 
 ## Method
-Collaborative filtering: both user_based and item_based approach
+Collaborative filtering
+- User_based approach: Based on individual purchase history. This appraoch has disadvantage for new customers who doesn have enough data to compare 
+- Item_based approach: Based on the similarities between items
 
 ## Languege
 Python 3
