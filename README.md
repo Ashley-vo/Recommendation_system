@@ -10,7 +10,7 @@ Build a product recommendation algorithm
 ## Method
 Collaborative filtering
 - User_based approach: Based on individual purchase history. This appraoch has disadvantage for new customers who doesn have enough data to compare 
-- Item_based approach: Based on the similarities between items
+- Item_based approach: Based on the similarities between items. This algorimth can recommend product easy for both new and existing customers
 
 _Reference: Hands-On Data Science for Marketing by Yoon Hyup Hwang_
 ## Languege
