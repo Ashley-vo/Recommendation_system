@@ -44,18 +44,18 @@ if __name__ == '__main__':
     ## eliminate return or cancel order
     df = df.loc[df["Quantity"] > 0]
     ## Drop NaN values in CustomerIF
-    # print(df.isna().sum())
+    print(df.isna().sum())
     df = df.dropna(subset =["CustomerID"])
 
     # Build customer-to-item matrix
     customer_to_item_matrix = customer_item_matrix(df, "CustomerID", "StockCode", "Quantity")
-    #print(customer_to_item_matrix)
+    print(customer_to_item_matrix)
 
     # User-bases approach
     user_user_similarity_array = cosine_similarity(customer_to_item_matrix)
     user_user_similarity_matrix = array_to_matrix(user_user_similarity_array, customer_to_item_matrix.index)
 
-    # print(recommended_items_user_based_approach(df,17935,customer_to_item_matrix,user_user_similarity_matrix))
+    print(recommended_items_user_based_approach(df,17935,customer_to_item_matrix,user_user_similarity_matrix))
 
     # Build item-to-customer matrix
     item_to_customer_matrix = customer_to_item_matrix.T
