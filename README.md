@@ -12,6 +12,6 @@ Collaborative filtering
 - User_based approach: Based on individual purchase history. This appraoch has disadvantage for new customers who doesn have enough data to compare 
 - Item_based approach: Based on the similarities between items
 
-_Reference_: Hands-On Data Science for Marketing by Yoon Hyup Hwang
+_Reference: Hands-On Data Science for Marketing by Yoon Hyup Hwang_
 ## Languege
 Python 3
